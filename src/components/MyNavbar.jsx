@@ -8,7 +8,7 @@ const MyNavbar = () => {
   const firebaseContext = useFirebase();
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" fixed='top'>
         <Container>
           <Navbar.Brand href="/">Bookify.com</Navbar.Brand>
           <Nav className="ml-auto">
