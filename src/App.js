@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
 //Components
 import MyNavbar from './components/MyNavbar';
 //Pages
@@ -16,10 +15,10 @@ function App() {
     <>
       <MyNavbar />
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/login' element={<Login />}/>
-        <Route path='/register' element={<Register />}/>
-        <Route path='/books/new' element={<NewBookInfo />}/>
+        <Route path='/' element={<><div className='header-space'></div><Home /></>}/>
+        <Route path='/login' element={<><div className='header-space'></div><Login /></>}/>
+        <Route path='/register' element={<><div className='header-space'></div><Register /></>}/>
+        <Route path='/books/new' element={<><div className='header-space'></div><NewBookInfo /></>}/>
       </Routes>
     </>
   );

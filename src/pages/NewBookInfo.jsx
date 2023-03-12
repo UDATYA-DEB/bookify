@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useFirebase } from '../context/firebase';
@@ -8,12 +8,6 @@ const NewBookInfo = () => {
     const [bookInfo, setBookInfo] = useState({name: "", isbn: "", price: "", coverPic: ""})
     const firebaseContext = useFirebase();
     const navigate = useNavigate();
-    // console.log(firebaseContext.isLoggedIn)
-    // useEffect(()=>{
-    //     if (!firebaseContext.isLoggedIn){
-    //         navigate('/')
-    //     }
-    // },[firebaseContext.isLoggedIn, navigate])
 
     const handleInput = (e)=>{
         e.preventDefault();
